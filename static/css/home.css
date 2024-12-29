@@ -1,0 +1,112 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300; /* Optional: Set light weight as default */
+    font-style: normal; /* Optional: Ensure normal font style */
+  }
+header{
+    background-color: #133550;
+}
+
+#title
+{
+    text-align:center;
+    color:white;
+    padding:5px;
+    
+}
+.components {
+background-color: #133550; /* Background color for the header */
+padding: 10px 0; /* Padding for the header */
+}
+
+.components ul {
+list-style: none; /* Remove bullet points */
+display: flex; /* Align items in a row */
+justify-content: center; /* Evenly space items */
+margin: 0;
+padding: 0;
+}
+
+.components li {
+margin: 0 15px; /* Space between items */
+}
+
+.components a {
+text-decoration: none; /* Remove underline */
+color: white; /* Default text color */
+font-size: 16px;
+font-weight: bold;
+transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.components a:hover {
+color: #ff6347; /* Change to a different color on hover (e.g., tomato) */
+}
+
+/* empty div of height 2px*/
+.space
+{
+    height:5px;
+}
+
+/* styling the height of the home vedio to be 360px */
+.fixed-height {
+    height: 500px;      /* Fix the height */
+    object-fit: cover;  /* Ensure the video fills the width while maintaining its aspect ratio */
+  }
+
+/*styling the about section*/
+#abt_title
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#abt_content
+{
+font-size:1.2rem;
+font-weight:500;
+}
+#abt_btn
+{
+    
+    color:white;
+    background-color: #133550;
+    border: 3px solid white;
+    padding: 6px;
+}
+
+/*Texture painting section stylying */
+
+#txt_container
+{
+    background-color: #133550;
+
+}
+#txt_image
+{
+    margin:0;
+    padding:0;
+}
+
+@media (min-width: 992px) {
+    #txt_image {
+        height:100%; /* Allow the height to adjust proportionally */
+        width: 80%; /* Increase the width for large screens */
+    }
+}
+
+#txt_content{
+    color:white;
+    text-align: center;
+    display: flex;  
+    flex-direction:column;             /* Use flexbox layout */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;
+}
