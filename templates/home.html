@@ -120,9 +120,19 @@
     </div> -->
     <div class="container-fluid" id="txt_container">
         <div class="row">
-            <!-- First Column: Image -->
-            <div class="col-12 col-md-6" >
-                <img src="{{ url_for('static', filename='images/texture1.jpg') }}" id="txt_image" alt="Texture Image"  style="height: 500px; object-fit: cover;" class="img-fluid">
+            <!-- First Column: Images -->
+            <div class="col-12 col-md-6" id="column1" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                <img src="{{ url_for('static', filename='images/texture1.jpg') }}" 
+                     id="txt_image" 
+                     alt="Texture Image"  
+                     style="height: 500px; width:calc(50% - 5px); object-fit: cover;" 
+                     class="img-fluid">
+                     
+                <img src="{{ url_for('static', filename='images/texture3.jpg') }}" 
+                     id="txt_image" 
+                     alt="Texture Image"  
+                     style="height: 500px; width:calc(50% - 5px); object-fit: cover;" 
+                     class="img-fluid">
             </div>
     
             <!-- Second Column: Content -->
@@ -131,9 +141,13 @@
                 <span>
                     <p>Explore the innovative painting techniques services provided by us, that will elevate your home or office.</p>
                 </span>
+                <button id="txt_btn">Know More -> </button>
             </div>
         </div>
-    </div> 
+    </div>
+
+    
+    
 
     
 
